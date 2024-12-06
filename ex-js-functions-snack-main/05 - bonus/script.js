@@ -6,12 +6,26 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
+const hour = 16;
+const greeting = getGreeting(name, hour);
+console.log(greeting);
+function getGreeting(name, hour) {
+    if (hour < 17) {
+        return `Buon pomeriggio ${name}`;
+        }
+}
 
 
 // Dichiara la funzione qui.
+function getGreeting(name, hour) {
+    if (hour < 17) {
+        return `Buon pomeriggio ${name }`;
+    }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(greeting);
 
 
 
